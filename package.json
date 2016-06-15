@@ -14,5 +14,6 @@
     "electron-packager": ">=5.0.2",
     "electron-prebuilt": ">=0.30.6"
   },
+  "author": "yosmoc",
   "license": "MIT"
 }
