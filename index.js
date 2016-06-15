@@ -1,6 +1,7 @@
 const electron = require('electron');
 const {app} = electron;
 const {BrowserWindow} = electron;
+const userAgent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_0 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13A344 Safari/601.1';
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -11,7 +12,7 @@ function createWindow() {
   win = new BrowserWindow({width: 800, height: 600});
 
   // and load the index.html of the app.
-  win.loadURL('http://www.ehonnavi.net/');
+  win.loadURL('http://www.ehonnavi.net/', { userAgent: userAgent });
 
   // Emitted when the window is closed.
   win.on('closed', () => {
