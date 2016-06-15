@@ -10,6 +10,9 @@
     "package": "electron-packager ./ ehonnavi --platform=darwin,win32 --arch=all --version=1.2.2"
   },
   "keywords": [],
-  "author": "",
+  "devDependencies": {
+    "electron-packager": ">=5.0.2",
+    "electron-prebuilt": ">=0.30.6"
+  },
   "license": "MIT"
 }
